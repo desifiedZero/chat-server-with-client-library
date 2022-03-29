@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+<PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+	<OutputType>Exe</OutputType>
+	<PublishSingleFile>true</PublishSingleFile>
+	<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+	<PlatformTarget>x64</PlatformTarget>
+	<IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+	<StartupObject></StartupObject>
+</PropertyGroup>
+
+<ItemGroup>
+  <PackageReference Include="Core.System.Configuration.Install" Version="1.1.0" />
+  <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="5.0.1" />
+  <PackageReference Include="Microsoft.Extensions.Http" Version="5.0.0" />
+  <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
+  <PackageReference Include="System.ServiceProcess.ServiceController" Version="5.0.0" />
+</ItemGroup>
+
+<ItemGroup>
+    <ProjectReference Include="..\..\ChatClient\ChatClient\ChatLibrary.csproj" />
+</ItemGroup>
+
+</Project>
